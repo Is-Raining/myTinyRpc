@@ -1,5 +1,9 @@
 package server
 
+import "time"
+
+const MaxCloseWaitTime = 10 * time.Second
+
 // Service is the interface that provides services.
 type Service interface {
 	// Register 注册服务.
